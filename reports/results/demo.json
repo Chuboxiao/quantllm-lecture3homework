@@ -1,0 +1,178 @@
+[
+  {
+    "step": "新增卖单 S1",
+    "trades": [],
+    "book": {
+      "bids": [],
+      "asks": [
+        {
+          "price": 1000,
+          "quantity": 300,
+          "orders": 1
+        }
+      ]
+    }
+  },
+  {
+    "step": "新增卖单 S2",
+    "trades": [],
+    "book": {
+      "bids": [],
+      "asks": [
+        {
+          "price": 1000,
+          "quantity": 800,
+          "orders": 2
+        }
+      ]
+    }
+  },
+  {
+    "step": "新增卖单 S3",
+    "trades": [],
+    "book": {
+      "bids": [],
+      "asks": [
+        {
+          "price": 1000,
+          "quantity": 800,
+          "orders": 2
+        },
+        {
+          "price": 1001,
+          "quantity": 600,
+          "orders": 1
+        }
+      ]
+    }
+  },
+  {
+    "step": "新增买单 B1",
+    "trades": [],
+    "book": {
+      "bids": [
+        {
+          "price": 999,
+          "quantity": 400,
+          "orders": 1
+        }
+      ],
+      "asks": [
+        {
+          "price": 1000,
+          "quantity": 800,
+          "orders": 2
+        },
+        {
+          "price": 1001,
+          "quantity": 600,
+          "orders": 1
+        }
+      ]
+    }
+  },
+  {
+    "step": "新增买单 B2",
+    "trades": [],
+    "book": {
+      "bids": [
+        {
+          "price": 999,
+          "quantity": 400,
+          "orders": 1
+        },
+        {
+          "price": 998,
+          "quantity": 700,
+          "orders": 1
+        }
+      ],
+      "asks": [
+        {
+          "price": 1000,
+          "quantity": 800,
+          "orders": 2
+        },
+        {
+          "price": 1001,
+          "quantity": 600,
+          "orders": 1
+        }
+      ]
+    }
+  },
+  {
+    "step": "买单 B3 以10元买入1000股",
+    "trades": [
+      {
+        "buy_id": 6,
+        "sell_id": 1,
+        "price": 1000,
+        "quantity": 300,
+        "time": 0,
+        "sequence": 6,
+        "phase": "continuous"
+      },
+      {
+        "buy_id": 6,
+        "sell_id": 2,
+        "price": 1000,
+        "quantity": 500,
+        "time": 0,
+        "sequence": 6,
+        "phase": "continuous"
+      }
+    ],
+    "book": {
+      "bids": [
+        {
+          "price": 1000,
+          "quantity": 200,
+          "orders": 1
+        },
+        {
+          "price": 999,
+          "quantity": 400,
+          "orders": 1
+        },
+        {
+          "price": 998,
+          "quantity": 700,
+          "orders": 1
+        }
+      ],
+      "asks": [
+        {
+          "price": 1001,
+          "quantity": 600,
+          "orders": 1
+        }
+      ]
+    }
+  },
+  {
+    "step": "撤销 B3 剩余200股",
+    "trades": [],
+    "book": {
+      "bids": [
+        {
+          "price": 999,
+          "quantity": 400,
+          "orders": 1
+        },
+        {
+          "price": 998,
+          "quantity": 700,
+          "orders": 1
+        }
+      ],
+      "asks": [
+        {
+          "price": 1001,
+          "quantity": 600,
+          "orders": 1
+        }
+      ]
+    }
+  }
+]

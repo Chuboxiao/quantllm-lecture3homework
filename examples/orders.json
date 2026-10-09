@@ -1,0 +1,10 @@
+[
+  {"type": "add", "order_id": 1, "side": "S", "price_yuan": "10.00", "quantity": 300, "time": "09:30:00.000"},
+  {"type": "add", "order_id": 2, "side": "S", "price_yuan": "10.00", "quantity": 500, "time": "09:30:00.010"},
+  {"type": "add", "order_id": 3, "side": "S", "price_yuan": "10.01", "quantity": 600, "time": "09:30:00.020"},
+  {"type": "add", "order_id": 4, "side": "B", "price_yuan": "10.00", "quantity": 1000, "time": "09:30:00.030"},
+  {"type": "cancel", "order_id": 4, "time": "09:30:00.040"},
+  {"type": "add", "order_id": 5, "side": "B", "price_yuan": "10.02", "quantity": 1000, "time": "14:57:00.000", "auction": true},
+  {"type": "add", "order_id": 6, "side": "S", "price_yuan": "10.02", "quantity": 400, "time": "14:57:00.010", "auction": true},
+  {"type": "uncross", "time": "15:00:00.000"}
+]

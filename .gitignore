@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+sse50_20260923/
+output/
+.DS_Store
+*.zip
+.env
+.env.*
+!.env.example

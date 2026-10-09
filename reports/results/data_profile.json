@@ -1,0 +1,678 @@
+{
+  "date": "2026-09-23",
+  "files": {
+    "ord": {
+      "rows": 6276360,
+      "columns": [
+        {
+          "name": "BizIndex",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "Channel",
+          "type": "int64",
+          "nulls": 0
+        },
+        {
+          "name": "FunctionCode",
+          "type": "int8",
+          "nulls": 0
+        },
+        {
+          "name": "OrderKind",
+          "type": "int8",
+          "nulls": 0
+        },
+        {
+          "name": "OrderNumber",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "OrderOriNo",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "Price",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "Time",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "Volume",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "Symbol",
+          "type": "int32",
+          "nulls": 0
+        }
+      ],
+      "bytes": 125584504,
+      "sha256": "5e3fa7f96edc130262661bf379a5c367952327d36b0936e720cba907e78bd61b",
+      "time_min": "09:15:00.000",
+      "time_max": "15:05:00.000",
+      "symbol_count": 50,
+      "OrderKind": [
+        {
+          "values": 83,
+          "counts": 250
+        },
+        {
+          "values": 65,
+          "counts": 4533409
+        },
+        {
+          "values": 68,
+          "counts": 1742701
+        }
+      ],
+      "FunctionCode": [
+        {
+          "values": 73,
+          "counts": 50
+        },
+        {
+          "values": 66,
+          "counts": 3100467
+        },
+        {
+          "values": 83,
+          "counts": 3175643
+        },
+        {
+          "values": 79,
+          "counts": 50
+        },
+        {
+          "values": 74,
+          "counts": 50
+        },
+        {
+          "values": 67,
+          "counts": 50
+        },
+        {
+          "values": 86,
+          "counts": 50
+        }
+      ],
+      "Channel": [
+        {
+          "values": 1002,
+          "counts": 535941
+        },
+        {
+          "values": 1005,
+          "counts": 872691
+        },
+        {
+          "values": 1007,
+          "counts": 1028650
+        },
+        {
+          "values": 1006,
+          "counts": 916459
+        },
+        {
+          "values": 1001,
+          "counts": 1256823
+        },
+        {
+          "values": 1004,
+          "counts": 697541
+        },
+        {
+          "values": 1008,
+          "counts": 398359
+        },
+        {
+          "values": 1003,
+          "counts": 569896
+        }
+      ]
+    },
+    "exe": {
+      "rows": 3792934,
+      "columns": [
+        {
+          "name": "AskOrder",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "BSFlag",
+          "type": "int8",
+          "nulls": 0
+        },
+        {
+          "name": "BidOrder",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "BizIndex",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "Channel",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "FunctionCode",
+          "type": "int8",
+          "nulls": 0
+        },
+        {
+          "name": "Index",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "OrderKind",
+          "type": "int8",
+          "nulls": 0
+        },
+        {
+          "name": "Price",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "Time",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "Volume",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "Symbol",
+          "type": "int32",
+          "nulls": 0
+        }
+      ],
+      "bytes": 78166158,
+      "sha256": "ec1774c557600549992f1c349705fdacdddeabdb58750a8fba4d2198f9207222",
+      "time_min": "09:25:00.000",
+      "time_max": "15:29:59.070",
+      "symbol_count": 50,
+      "OrderKind": [
+        {
+          "values": 0,
+          "counts": 3792934
+        }
+      ],
+      "FunctionCode": [
+        {
+          "values": 0,
+          "counts": 3792934
+        }
+      ],
+      "BSFlag": [
+        {
+          "values": 0,
+          "counts": 38867
+        },
+        {
+          "values": 83,
+          "counts": 1909827
+        },
+        {
+          "values": 66,
+          "counts": 1844240
+        }
+      ],
+      "Channel": [
+        {
+          "values": 1002,
+          "counts": 277111
+        },
+        {
+          "values": 1007,
+          "counts": 624682
+        },
+        {
+          "values": 1005,
+          "counts": 670039
+        },
+        {
+          "values": 1006,
+          "counts": 589929
+        },
+        {
+          "values": 1004,
+          "counts": 416085
+        },
+        {
+          "values": 1001,
+          "counts": 739156
+        },
+        {
+          "values": 1008,
+          "counts": 243813
+        },
+        {
+          "values": 1003,
+          "counts": 229656
+        },
+        {
+          "values": 2301,
+          "counts": 2463
+        }
+      ]
+    },
+    "snp": {
+      "rows": 252631,
+      "columns": [
+        {
+          "name": "AccTurnover",
+          "type": "int64",
+          "nulls": 0
+        },
+        {
+          "name": "AccVolume",
+          "type": "int64",
+          "nulls": 0
+        },
+        {
+          "name": "AfterMatchItem",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "AfterPrice",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "AfterTurnover",
+          "type": "int64",
+          "nulls": 0
+        },
+        {
+          "name": "AfterVolume",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "AskAvgPrice",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "AskPrice1",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "AskPrice2",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "AskPrice3",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "AskPrice4",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "AskPrice5",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "AskPrice6",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "AskPrice7",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "AskPrice8",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "AskPrice9",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "AskPrice10",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "AskVolume1",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "AskVolume2",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "AskVolume3",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "AskVolume4",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "AskVolume5",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "AskVolume6",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "AskVolume7",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "AskVolume8",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "AskVolume9",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "AskVolume10",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "BSFlag",
+          "type": "int8",
+          "nulls": 0
+        },
+        {
+          "name": "BidAvgPrice",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "BidPrice1",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "BidPrice2",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "BidPrice3",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "BidPrice4",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "BidPrice5",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "BidPrice6",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "BidPrice7",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "BidPrice8",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "BidPrice9",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "BidPrice10",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "BidVolume1",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "BidVolume2",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "BidVolume3",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "BidVolume4",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "BidVolume5",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "BidVolume6",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "BidVolume7",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "BidVolume8",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "BidVolume9",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "BidVolume10",
+          "type": "double",
+          "nulls": 0
+        },
+        {
+          "name": "High",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "Low",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "MatchItem",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "Open",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "PreClose",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "Price",
+          "type": "float",
+          "nulls": 0
+        },
+        {
+          "name": "Time",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "TotalAskVolume",
+          "type": "int64",
+          "nulls": 0
+        },
+        {
+          "name": "TotalBidVolume",
+          "type": "int64",
+          "nulls": 0
+        },
+        {
+          "name": "Turnover",
+          "type": "int64",
+          "nulls": 0
+        },
+        {
+          "name": "Volume",
+          "type": "int32",
+          "nulls": 0
+        },
+        {
+          "name": "Symbol",
+          "type": "int32",
+          "nulls": 0
+        }
+      ],
+      "bytes": 26806291,
+      "sha256": "ac69d2f1810a24a15cb4c90183a6d3ea7ee31eccbcd98c58ed1f7f7f7c34aa87",
+      "time_min": "08:45:00.000",
+      "time_max": "15:30:32.000",
+      "symbol_count": 50,
+      "BSFlag": [
+        {
+          "values": 32,
+          "counts": 35990
+        },
+        {
+          "values": 66,
+          "counts": 115629
+        },
+        {
+          "values": 83,
+          "counts": 101012
+        }
+      ]
+    }
+  },
+  "symbols": [
+    600028,
+    600030,
+    600031,
+    600036,
+    600050,
+    600089,
+    600111,
+    600150,
+    600183,
+    600276,
+    600309,
+    600406,
+    600519,
+    600760,
+    600809,
+    600887,
+    600900,
+    600930,
+    601012,
+    601088,
+    601127,
+    601166,
+    601211,
+    601288,
+    601318,
+    601328,
+    601398,
+    601600,
+    601601,
+    601628,
+    601658,
+    601668,
+    601688,
+    601728,
+    601857,
+    601888,
+    601899,
+    601919,
+    601988,
+    603019,
+    603259,
+    603501,
+    603986,
+    603993,
+    688008,
+    688012,
+    688041,
+    688111,
+    688256,
+    688981
+  ],
+  "price_unit": "元（源文件 float32；系统整数分）",
+  "quantity_unit": "股，已与快照累计成交量及档位数量核对",
+  "time_encoding": "HHMMSSmmm，如 93000030 = 09:30:00.030；样本逐笔时间分辨率主要为10毫秒",
+  "order_encoding": {
+    "OrderKind": {
+      "65/A": "新增剩余委托",
+      "68/D": "撤单",
+      "83/S": "产品阶段状态"
+    },
+    "FunctionCode": {
+      "66/B": "买",
+      "83/S": "卖",
+      "73/I": "开盘集合竞价",
+      "79/O": "连续交易",
+      "74/J": "收盘集合竞价",
+      "67/C": "闭市",
+      "86/V": "盘后阶段"
+    }
+  },
+  "ordering": "同一竞价 Channel 按 BizIndex；订单使用 OrderOriNo，与 BidOrder/AskOrder 关联。此包仅包含50只股票，通道序号跳号不能直接判定丢包。"
+}

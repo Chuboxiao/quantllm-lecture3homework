@@ -1,0 +1,27 @@
+[
+  {
+    "symbol": 600036,
+    "time": 93000030,
+    "query_matches_persisted_event_state": true
+  },
+  {
+    "symbol": 600036,
+    "time": 100000000,
+    "query_matches_persisted_event_state": true
+  },
+  {
+    "symbol": 600519,
+    "time": 113000000,
+    "query_matches_persisted_event_state": true
+  },
+  {
+    "symbol": 688981,
+    "time": 145700000,
+    "query_matches_persisted_event_state": true
+  },
+  {
+    "symbol": 601288,
+    "time": 150000000,
+    "query_matches_persisted_event_state": true
+  }
+]
