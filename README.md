@@ -2,6 +2,17 @@
 
 这个项目用课堂提供的上证50数据，完成逐笔委托、撤单、成交回放，维护完整订单簿；再补回未披露的主动订单，由撮合引擎生成成交，并与真实成交和行情快照核对。
 
+## 在线模拟撮合演示
+
+**[直接打开在线交易所](https://chuboxiao-lecture3-exchange.pkucoecourse.chatgpt.site)**，无需安装Python。支持买卖限价订单、撤单、连续竞价、集合竞价，以及验证结果和作业报告入口。每位访客的模拟盘口互相独立，刷新恢复示例。
+
+在线版源码位于 `docs/`，撮合逻辑在浏览器内执行。其成交、剩余订单、十档盘口和竞价价格已通过101组、6,100步事件与Python引擎逐步对比。完整历史回放仍通过下面的本地Python服务运行。在线版也可以作为静态网站托管到GitHub Pages。
+
+```bash
+# 可选：需要Node.js，对比在线版与Python撮合结果
+python tests/check_online_engine.py
+```
+
 ## 提交内容
 
 本仓库用于[第三节实践课 Issue 6](https://github.com/aslan9/pku_quantllm/issues/6)，包含完整Python代码、模拟交易所网页、作业报告和全量验证摘要。

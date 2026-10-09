@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>第三讲作业 · 在线模拟交易所</title><link rel="stylesheet" href="./style.css"></head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <a class="brand" href="./" aria-label="市场实验室首页"><span class="brand-icon">≋</span><span>市场实验室<small>MARKET LAB</small></span></a>
+    <div class="side-label">第三讲 · 高频数据实践</div>
+    <nav aria-label="主要功能">
+      <button class="nav-item active" data-tab="simulator" aria-selected="true"><span>⇄</span>模拟交易所</button>
+      <button class="nav-item" data-tab="validation" aria-selected="false"><span>✓</span>验证结果</button>
+      <a class="nav-item" href="https://github.com/Chuboxiao/quantllm-lecture3homework/blob/main/reports/%E4%BD%9C%E4%B8%9A%E6%8A%A5%E5%91%8A.md" target="_blank" rel="noopener"><span>↗</span>作业报告</a>
+      <a class="nav-item" href="https://github.com/Chuboxiao/quantllm-lecture3homework" target="_blank" rel="noopener"><span>⌘</span>源码仓库</a>
+    </nav>
+    <div class="side-bottom"><span class="status-dot"></span>在线撮合演示已就绪<small>上证50 · 2026.09.23<br>浏览器内独立模拟盘口</small></div>
+  </aside>
+  <main>
+    <header class="topbar"><span>量化交易系统 / <strong id="breadcrumb">模拟交易所</strong></span><span class="course-badge">课堂实践 <span>03</span></span></header>
+    <div class="content">
+      <section id="simulator" class="view">
+        <div class="page-title"><div><div class="eyebrow">你来提交订单，交易所负责撮合</div><h1>亲手推动一次成交</h1><p>试着改变价格和数量，看订单如何成交、排队，或被撤销。每位访客的模拟盘口互相独立。</p></div><span class="outline-badge">在线演示 · 无需安装</span></div>
+        <div class="sim-toolbar"><div class="segmented" aria-label="撮合方式"><button data-phase="continuous" class="selected">连续竞价</button><button data-phase="auction">集合竞价</button></div><div class="toolbar-actions"><button id="demo-button" class="button secondary">演示：买入1,000股</button><button id="seed-button" class="text-button">恢复示例</button><button id="clear-button" class="text-button">清空盘口</button></div></div>
+        <div class="sim-grid"><div class="card order-card"><div class="card-heading"><div><h2>提交限价订单</h2><p>价格优先，同价按到达顺序排队。</p></div></div><form id="order-form"><div class="side-switch"><button type="button" data-side="B" class="selected">买入</button><button type="button" data-side="S">卖出</button></div><label for="order-price">限价 <span>元 / 股</span></label><input id="order-price" type="number" min="0.01" max="100000" step="0.01" value="10.00" required><label for="order-quantity">委托数量 <span>股</span></label><input id="order-quantity" type="number" min="1" max="100000000" step="1" value="1000" required><div class="order-hint">订单号 <b id="next-order">#6</b> 将自动分配</div><button id="submit-order" class="button buy-button" type="submit">提交买单 ↗</button></form><div id="auction-controls" class="auction-controls" hidden><span>虚拟成交价 <b id="auction-price">—</b></span><span>可成交数量 <b id="auction-quantity">0</b>股</span><button id="uncross-button" class="button full">统一撮合</button></div><div class="rule-note"><strong id="rule-title">新订单可以立即成交</strong><p id="rule-text">买价达到卖价，或卖价低至买价，就与已有对手单成交。剩余数量继续排队。</p></div></div><div class="sim-market"><div id="sim-metrics" class="metrics compact"></div><div class="card"><div class="card-heading"><div><h2>模拟订单簿</h2><p>背景条表示该价位的挂单数量。</p></div><span class="mini-legend"><i class="buy-dot"></i>买盘 <i class="sell-dot"></i>卖盘</span></div><div id="sim-book"></div></div><div id="sim-message" class="action-message" role="status"></div></div></div>
+        <div class="history-grid sim-bottom"><div class="card"><div class="card-heading"><div><h2>未成交订单</h2><p>每笔订单保留自己的排队位置，可撤销剩余数量。</p></div><span id="sim-order-count" class="unit"></span></div><div id="sim-orders" class="table-wrap"></div></div><div class="card"><div class="card-heading"><div><h2>引擎生成的成交</h2><p>最新成交在上，成交价由撮合规则决定。</p></div></div><div id="sim-trades" class="table-wrap"></div></div></div>
+        <p class="footnote">在线版在浏览器内演示限价撮合，刷新后恢复示例。完整Python引擎、历史行情回放和作业报告见源码仓库。</p>
+      </section>
+      <section id="validation" class="view" hidden>
+        <div class="page-title"><div><div class="eyebrow">结果可以逐条核对</div><h1>让数据检验撮合规则</h1><p>以下是本地Python程序处理全部50只股票后保存的验证结果。</p></div><a href="./report.html" target="_blank" class="button secondary">完整验证报告 ↗</a></div>
+        <div id="validation-metrics" class="metrics"></div>
+        <div class="card validation-card"><div class="check-icon">✓</div><h2>50只股票，全量核对通过</h2><p>连续竞价、开盘集合竞价、收盘集合竞价的成交顺序和订单配对均一致；最终完整订单簿及同价队列顺序均一致。</p><div class="validation-details"><div><b>价格与时间优先</b><span>同价订单先到先成交</span></div><div><b>部分成交与撤单</b><span>逐订单跟踪剩余数量</span></div><div><b>开盘与收盘集合竞价</b><span>从订单簿计算统一成交价</span></div></div></div>
+        <div class="card methodology"><h2>这些结果说明了什么？</h2><p>上交所逐笔委托披露的是首次撮合后的剩余量。模拟流程借助历史成交补回主动委托，再由引擎选择对手订单。结果验证的是历史撮合的一致性；完全成交订单的原始限价或市价类型无法唯一还原。</p><p>快照没有业务序号。236,674条适用快照在相同累计成交量和笔数、前后3秒的候选事件中，找到了十档价量及买卖总量完全一致的状态。该比例不是时间戳直接对齐的准确率。2,463笔盘后成交单独保留，因为没有对应委托数据。</p></div>
+      </section>
+    </div>
+  </main>
+</div>
+<div id="loading" class="loading-bar" hidden></div><div id="toast" class="toast" role="alert" hidden></div>
+<script src="./engine.js"></script><script src="./demo.js"></script>
+</body></html>
